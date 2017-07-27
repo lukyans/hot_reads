@@ -5,10 +5,9 @@ class LinksController < ApplicationController
 
   def create
     url = params[:url]
-    @link = Link.create(url: url)
-    binding.pry
-    if @link.save
-      redirect_to root_path
-    end
+    # binding.pry
+    @link = Link.find_or_create_by(url: url).increment!(:count,1)
+    # @link.save
+    redirect_to root_path
   end
 end
