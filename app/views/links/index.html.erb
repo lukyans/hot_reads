@@ -1,0 +1,7 @@
+<h3>HOT READS!</h3>
+<% @links.sort.each do |link| %>
+<div class="hot-read">
+  <%= link.url %>
+  --Read <%= link.count %> times<br>
+</div>
+<% end %>
