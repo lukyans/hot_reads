@@ -4,14 +4,11 @@ class LinksController < ApplicationController
   end
 
   def create
+    url = params[:url]
+    @link = Link.create(url: url)
     binding.pry
-    @link = Link.new(link_params)
     if @link.save
       redirect_to root_path
     end
-  end
-
-  def link_params
-    params.require(:link).permit(:url)
   end
 end
