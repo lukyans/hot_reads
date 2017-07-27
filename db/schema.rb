@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20170727153111) do
   create_table "links", force: :cascade do |t|
     t.string "url"
     t.integer "count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

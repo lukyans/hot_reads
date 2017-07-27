@@ -4,10 +4,8 @@ class LinksController < ApplicationController
   end
 
   def create
-    url = params[:url]
-    # binding.pry
-    @link = Link.find_or_create_by(url: url).increment!(:count,1)
-    # @link.save
+    link = Link.find_or_create_by(url: params[:url]).increment!(:count,1)
+    @link = link.where(created_at: 24.hours.ago..Time.now)
     redirect_to root_path
   end
 end
