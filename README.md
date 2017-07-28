@@ -28,4 +28,4 @@ https://github.com/lukyans/hot_reads
 `rails server -p 2000
 
 7. Open in browser
-http://localhost:3001
+http://localhost:2000
