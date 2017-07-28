@@ -1,24 +1,31 @@
-# README
+# Hot Reads
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hot Reads is a Rails application that works with the app URLockbox.
 
-Things you may want to cover:
+Website
 
-* Ruby version
+[http://hot-reads-sl.herokuapp.com/]
 
-* System dependencies
+Set up
 
-* Configuration
+1. Clone down the repo
+https://github.com/lukyans/hot_reads
 
-* Database creation
+2. Select folder
 
-* Database initialization
+`$ cd /hot_reads`
 
-* How to run the test suite
+4. Install gems
 
-* Services (job queues, cache servers, search engines, etc.)
+`$bundle install`
 
-* Deployment instructions
+5. Create and migrate database
 
-* ...
+`rake db:create`
+`rake db:migrate`
+
+6. Start up local server
+`rails server -p 2000
+
+7. Open in browser
+http://localhost:3001
