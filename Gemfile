@@ -14,8 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
-gem 'rails_12factor', group: :production
-
+gem 'rails_12factor'
+gem 'jquery-datatables-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'responders'
 gem 'awesome_print'
