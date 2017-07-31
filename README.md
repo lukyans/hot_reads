@@ -9,6 +9,7 @@ Website
 Set up
 
 1. Clone down the repo
+
 https://github.com/lukyans/hot_reads
 
 2. Select folder
@@ -25,7 +26,9 @@ https://github.com/lukyans/hot_reads
 `rake db:migrate`
 
 6. Start up local server
+
 `rails server -p 2000
 
 7. Open in browser
+
 http://localhost:2000
