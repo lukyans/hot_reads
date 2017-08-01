@@ -27,7 +27,7 @@ https://github.com/lukyans/hot_reads
 
 6. Start up local server
 
-`rails server -p 2000
+`rails server -p 2000`
 
 7. Open in browser
 
